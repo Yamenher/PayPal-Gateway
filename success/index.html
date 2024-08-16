@@ -3,34 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Success</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Thank You Message</title>
     <style>
         body {
-            @apply flex justify-center items-center h-screen bg-gray-100;
-        }
-        .container {
-            @apply flex flex-col items-center justify-center p-6 bg-white shadow-md rounded-lg text-center;
-        }
-        .icon {
-            @apply text-green-500 text-6xl mb-4;
-        }
-        .image {
-            @apply w-32 h-32 mb-4;
-        }
-        .message-text {
-            @apply text-2xl font-semibold text-gray-800;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f7fafc; /* Light gray background */
+            margin: 0;
         }
         .thank-you-text {
-            @apply text-2xl font-bold text-gray-800 mt-4;
+            font-size: 24px; /* Adjust the font size as needed */
+            font-weight: bold;
+            color: #2d3748; /* Dark gray text */
+            text-align: center; /* Center the text */
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="https://cdn.dribbble.com/users/1751799/screenshots/5512482/check02.gif" alt="Success" class="image">
-        <center><b><div class="message-text">Payment Successful!</div></b></center>
-        <div class="thank-you-text">Thank you for buying our subscription, you're now a pro user!</div>
+    <div class="thank-you-text">
+        Thank you for buying our subscription, you're now a pro user!
     </div>
 </body>
 </html>
