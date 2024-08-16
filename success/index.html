@@ -5,32 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Success</title>
     <style>
+        @font-face {
+            font-family: 'CustomFont';
+            src: url('font.ttf') format('truetype'); /* Replace with your font file */
+        }
+
         body {
+            margin: 0;
+            height: 100vh;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background-color: #f7fafc; /* Light gray background */
-            margin: 0;
+            background: linear-gradient(to bottom, #ffffff 0%, #87CEEB 100%); /* Gradient from white to light blue */
         }
+
+        .container {
+            background-color: white; /* Background of the container */
+            border-radius: 15px; /* Rounded corners */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            padding: 20px;
+            text-align: center;
+        }
+
         .image {
-            width: 128px; /* Adjust the size of the image */
-            height: 128px;
+            width: 150px; /* Adjust the size of the image */
+            height: auto; /* Maintain aspect ratio */
             margin-bottom: 20px; /* Space between image and text */
         }
+
         .thank-you-text {
+            font-family: 'CustomFont', sans-serif; /* Use the custom font */
             font-size: 24px; /* Adjust the font size as needed */
             font-weight: bold;
             color: #2d3748; /* Dark gray text */
-            text-align: center; /* Center the text */
         }
     </style>
 </head>
 <body>
-    <img src="AppLogo.png" alt="Success" class="image">
-    <div class="thank-you-text">
-        Thank you for buying our subscription, you're now a pro user!
+    <div class="container">
+        <img src="your-image.png" alt="Success" class="image"> <!-- Replace with your image file -->
+        <div class="thank-you-text">
+            Thank you for buying our subscription, you're now a pro user!
+        </div>
     </div>
 </body>
 </html>
